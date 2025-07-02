@@ -1,5 +1,7 @@
 'use client'
 
+import '@/styles/globals.css'
+
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { loginUser } from '@/utils/api'
@@ -28,27 +30,31 @@ export default function LoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <h2 className="text-2xl font-bold">Login</h2>
+    <form onSubmit={handleSubmit} className="f-login">
+      <h2>Login</h2>
       {error && <p className="text-red-600">{error}</p>}
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={e => setEmail(e.target.value)}
-        className="block border p-2 w-full"
-      />
-      <input
-        type="password"
-        placeholder="Senha"
-        value={password}
-        onChange={e => setPassword(e.target.value)}
-        className="block border p-2 w-full"
-      />
-      <label className="flex items-center gap-2">
-        <input type="checkbox" checked={remember} onChange={e => setRemember(e.target.checked)} />
-        Lembrar de mim
-      </label>
+      <div className="c-input">
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          className="i-login"
+        />
+        <input
+          type="password"
+          placeholder="Senha"
+          value={password}
+          onChange={e => setPassword(e.target.value)}
+          className="i-login"
+        />
+      </div>
+      <div className="c-remember">
+        <label className="flex items-center gap-2">
+          <input type="checkbox" checked={remember} onChange={e => setRemember(e.target.checked)} />
+          Lembrar de mim
+        </label>
+      </div>
       <button type="submit" className="bg-blue-500 text-white px-4 py-2">Entrar</button>
     </form>
   )
