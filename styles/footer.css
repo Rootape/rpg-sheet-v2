@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.c-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-right: 1px;
+    padding-left: 1px;
+    gap: 10px;
+}
+
+.c-links a{
+    color: inherit;
+}

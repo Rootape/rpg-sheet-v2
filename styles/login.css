@@ -1,0 +1,135 @@
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+
+.wrapper {
+    width: 300px;
+    height: 350px;
+    opacity: 60%;
+    background-color: black;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 60px rgba(255, 0, 0, 0.61);
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.f-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.f-login h2 {
+    font-size: 36px;
+}
+
+.c-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-input-box {
+    display: flex;
+    justify-content: center;
+    height: 36px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.c-input-box input {
+    background: transparent;
+    border: 2px solid rgba(119, 82, 82, 0.2);
+    border-radius: 40px;
+    width: 230px;
+    font-size: 16px;
+    color: red;
+    padding-left: 12px;
+}
+
+.c-input-box i {
+    opacity: 50%;
+    position: relative;
+    align-self: center;
+    right: 36px;
+    transform: translateX(50%);
+    font-size: 15px;
+}
+
+.c-input-box input::placeholder {
+    opacity: 60%;
+    color: red;
+}
+
+.c-input-box input:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px red;
+}
+
+.c-input-box input:not(:placeholder-shown) + i {
+  opacity: 0;
+}
+
+.c-remember label{
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    margin-top: -20px;
+    margin-left: -100px;
+    cursor: pointer;
+}
+
+.c-remember input {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ff0000;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.c-remember input:checked {
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+
+.f-login button {
+    width: 60%;
+    background: red;
+    border: red;
+    border-radius: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.f-login button:hover {
+    background: rgb(162, 0, 0);
+}
+
+.wrapper hr {
+    margin-top: 30px;
+    justify-self: center;
+    border-color: red;
+    width: 50%;
+}
+
+.c-register {
+    margin-top: 30px;
+    justify-self: center;
+    font-size: 16;
+}
+
+.c-register a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.c-register a:hover {
+    text-decoration: underline;
+}

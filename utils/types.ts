@@ -6,10 +6,8 @@ export interface LoginRequest {
 
 export interface RegisterRequest {
   userName: string
-  profileName: string
   email: string
   password: string
-  birthDate: string
 }
 
 // Respostas (response)

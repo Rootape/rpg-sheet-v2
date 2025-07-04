@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #000000;
+}
+
+.c-page {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgb(29, 11, 11) 50%, rgb(54, 14, 14) 100%);
+    color: red;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.c-main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 72px;
+}
+
+.c-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.c-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 900px;
+}

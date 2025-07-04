@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgb(22, 22, 22);
+}
+
+.c-page {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgb(22, 22, 22) 50%, rgb(81, 81, 81) 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+.c-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.c-main img {
+    justify-self: center;
+    position:absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: auto;
+    z-index: 0;
+}
+
+.c-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 900px;
+    z-index: 1;
+}
